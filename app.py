@@ -1,7 +1,7 @@
 # app.py
 import streamlit as st
 from pypdf import PdfReader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
 from transformers import pipeline
@@ -126,3 +126,4 @@ if st.button("Get Answer") and query.strip():
         st.write(f"Chunk {i}: {snippet}")
 else:
     st.info("Type a question and press 'Get Answer' to query the PDF.")
+

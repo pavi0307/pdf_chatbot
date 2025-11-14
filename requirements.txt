@@ -1,7 +1,7 @@
 streamlit
 langchain
-faiss-cpu
+langchain-community
 pypdf
+faiss-cpu
 sentence-transformers
-transformers
-torch
+python-dotenv

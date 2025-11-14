@@ -3,7 +3,7 @@ import streamlit as st
 from pypdf import PdfReader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from transformers import pipeline
 import tempfile
 from typing import List
@@ -126,5 +126,6 @@ if st.button("Get Answer") and query.strip():
         st.write(f"Chunk {i}: {snippet}")
 else:
     st.info("Type a question and press 'Get Answer' to query the PDF.")
+
 
 

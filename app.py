@@ -11,7 +11,7 @@ from typing import List
 # Streamlit App Config
 # -----------------------------------
 st.set_page_config(page_title="PDF Chatbot — Mini RAG (CPU)", layout="wide")
-st.title(" PDF Chatbot — Mini RAG (CPU-friendly)")
+st.title(" PDF Chatbot — Mini RAG ")
 st.write("Upload a PDF and ask questions about its content. The system uses embeddings + FAISS + a CPU-friendly text generation model.")
 
 # -----------------------------------
@@ -149,3 +149,4 @@ if st.button("Get Answer") and query.strip():
         st.write(f"**Chunk {i}:** {preview}...")
 else:
     st.info("Enter a question and click 'Get Answer'.")
+
